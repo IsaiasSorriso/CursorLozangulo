@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cursor.css">
+    <title>Cursor lozangulo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hex"></div>
+        <div class="bg"></div>
+    </div>
+    <script>
+        const Root = document.querySelector(".container");
+        const bg = document.querySelector(".bg");
+
+        Root.addEventListener("mousemove", function(e){
+            bg.style.left = `${e.clientX}px`;
+            bg.style.top = `${e.clientY}px`;
+        })
+    </script>
+</body>
+</html>
